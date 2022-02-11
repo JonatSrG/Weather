@@ -1,0 +1,81 @@
+@import "../_snowpack/pkg/tailwindcss/dist/base.css";
+@import "../_snowpack/pkg/tailwindcss/dist/components.css";
+@import "../_snowpack/pkg/tailwindcss/dist/utilities.css";
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    color: black;
+    padding: 10px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 420px;
+    margin: 16px;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 6.4px 16px;
+    border-radius: 25px;
+    background-color: darkgrey;
+    color: white;
+    font-size: 100%;
+    margin-top: auto;
+    margin-bottom: 8px;
+}
+
+button::hover {
+    margin: auto;
+    border: none;
+    height: 30px;
+    width: 30px;
+    color: black;
+    background: black;
+    padding: 80px;
+}
+
+h1.temp {
+    margin: 10px;
+    margin-bottom: 8px;
+    margin-left: 100px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+.weather.load {
+    max-height: 20px;
+    position: relative;
+    
+}
+
+.weather.load::after{
+    visibility: visible;
+    
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+
+.centrar {
+    padding: 20px;
+    width: 100%;
+    max-width: 420px;
+    margin: 20px;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
