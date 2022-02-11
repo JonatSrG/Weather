@@ -1,3 +1,70 @@
 @import 'tailwindcss/dist/base.css';
 @import 'tailwindcss/dist/components.css';
 @import 'tailwindcss/dist/utilities.css';
+
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.search {
+    background-color: rgb(50, 34, 199);
+    color: white;
+    padding: 10px;
+    border-radius: 25px;
+    width: 100%;
+    max-width: 420px;
+    margin: 16px;
+}
+
+input.search-bar {
+    border: none;
+    outline: none;
+    padding: 6.4px 16px;
+    border-radius: 25px;
+    background-color: rgb(30, 84, 104);
+    color: white;
+    font-size: 100%;
+    margin-top: auto;
+    margin-bottom: 8px;
+}
+
+button::hover {
+    margin: auto;
+    border: none;
+    height: 30px;
+    width: 30px;
+    color: white;
+    padding: 80px;
+}
+
+h1.temp {
+    margin: 10px;
+    margin-bottom: 8px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.description {
+    margin-left: 20px;
+}
+
+.weather.load {
+    max-height: 20px;
+    position: relative;
+    visibility: hidden;
+}
+
+.weather.load::after{
+    visibility: visible;
+    content: "Cargando";
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+
+
+
